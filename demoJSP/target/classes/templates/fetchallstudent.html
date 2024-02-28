@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="">
+<thead>
+<tr>
+<th>sid</th>
+<th>sname</th>
+<th>cname</th>
+<th>cfees</th>
+<th>cduration</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="a:${objects}">
+<td th:text="${a.studentid}"></td>
+<td th:text="${a.studentname}"></td>
+<td th:text="${a.coursename}"></td>
+<td th:text="${a.courseDto.coursefees}"></td>
+<td th:text="${a.courseDto.courseduration}"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
